@@ -1,0 +1,211 @@
+html {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 16px;
+  }
+
+/*header*/
+
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    border-bottom: solid 1px #c6c1c1;
+    background-color: rgb(63, 85, 58);
+    margin-top: 0;
+  }
+
+.logo {
+    display: none;
+}
+
+/*nav bar*/
+
+
+.nav-bar {
+    display: flex;
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    list-style-type: none;
+}
+
+.top-nav li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem 0.5rem 1rem;
+}
+
+ .top-nav a {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.6;
+    font-size: rem;
+    color:  rgb(227, 240, 32);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.top-nav a:hover {
+    color:#4a4a4a;
+    text-decoration-color: rgb(47, 176, 232);
+}
+
+/*main*/
+
+main {
+    position: relative;
+    top: 7rem; /* To offset for fixed header. */
+}
+
+/*welcome section with top photo*/
+
+.welcome-section {
+    text-align: center; 
+    background-image: url('../images/top photo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 43.5rem;
+}
+
+.welcome {
+    margin-top: 5rem;
+    text-transform: uppercase;
+    color: rgb(58, 85, 63);
+    letter-spacing: 5px;
+}
+
+.welcome-1 {
+    font-family: "Mynerve";
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(58, 85, 63);
+    margin-top: 100px;
+
+}
+
+.welcome-paragraph {
+    color: rgb(56, 54, 54);
+    text-align: center;
+}
+
+/*gallery*/
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    width: 320px;
+    height: 300px;
+    overflow: hidden;
+}
+
+/*signup section*/
+
+.signup {
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: center;
+    color:#393434;
+    background-color:rgb(227, 191, 7);
+    padding: 1rem;
+    height: 6rem;
+}
+
+.signup button {
+    background-color: rgb(227, 191, 7);
+    border: rgb(46, 45, 45) 2.5px solid;
+    color:rgb(46, 45, 45);
+}
+
+.signup button:hover {
+    background-color: rgb(247, 246, 243);
+    border: rgb(252, 251, 251) 2.5px solid;
+    color:rgb(46, 45, 45);
+    padding: 0.5rem;
+} 
+
+/*footer*/
+
+.footer {
+    position: relative;
+    top: 7rem;
+    padding: 1rem;
+    background-color:rgb(11, 59, 22);
+    color:rgb(233, 214, 12);
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+}
+
+.nav-2 {
+    display: flex;
+}
+
+.bottom-nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    list-style-type: none;
+}
+
+.bottom-nav li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem 1rem 0.5rem 1rem;
+}
+
+ .bottom-nav a {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.6;
+    font-size: rem;
+    color: rgb(227, 240, 32);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.bottom-nav a:hover {
+    color:#4a4a4a;
+    text-decoration-color: rgb(47, 176, 232);
+}
+
+  /* Media Queries ------------------- */
+
+  @media (min-width: 768px) {
+
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    margin-top: 2rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: auto;
+    padding-left: 1rem;
+}
+
+.desktop-logo {
+    letter-spacing: 0.3rem;
+    color: white;
+}
+
+}
